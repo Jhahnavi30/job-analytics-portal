@@ -29,7 +29,7 @@
   <datasources>
     <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
       <aliases enabled='yes' />
-      <column caption='Current_Hour' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
+      <column caption='Simulated IST Time (3 PM – 5 PM)' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
         <calculation class='tableau' formula='15' />
       </column>
     </datasource>
@@ -485,7 +485,7 @@
         <calculation class='tableau' formula='[Parameters].[Parameter 1] &gt;= 15 AND [Parameters].[Parameter 1] &lt; 17' />
       </column>
       <column caption='Show_3to6PM' datatype='boolean' name='[Calculation_1446719734616070]' role='dimension' type='nominal'>
-        <calculation class='tableau' formula='[Parameters].[Parameter 1] &gt;= 15 AND [Parameters].[Parameter 1] &lt; 18' />
+        <calculation class='tableau' formula='[Parameters].[Parameter 1] &gt;= 15 AND [Parameters].[Parameter 1] &lt; 17' />
       </column>
       <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
       <column datatype='integer' name='[Job Id]' role='dimension' type='ordinal' />
@@ -518,7 +518,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1615940</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Experience</remote-name>
@@ -533,7 +532,6 @@
               <approx-count>48</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Qualifications</remote-name>
@@ -548,7 +546,6 @@
               <approx-count>10</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Salary Range</remote-name>
@@ -563,7 +560,6 @@
               <approx-count>561</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>location</remote-name>
@@ -578,7 +574,6 @@
               <approx-count>214</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Country</remote-name>
@@ -593,7 +588,6 @@
               <approx-count>216</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>latitude</remote-name>
@@ -607,7 +601,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>216</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>longitude</remote-name>
@@ -621,7 +614,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>216</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Work Type</remote-name>
@@ -636,7 +628,6 @@
               <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Company Size</remote-name>
@@ -650,7 +641,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>416704</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Job Posting Date</remote-name>
@@ -664,7 +654,6 @@
               <aggregation>Year</aggregation>
               <approx-count>731</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Preference</remote-name>
@@ -679,7 +668,6 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Contact Person</remote-name>
@@ -694,7 +682,6 @@
               <approx-count>307230</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Contact</remote-name>
@@ -709,7 +696,6 @@
               <approx-count>1615940</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Job Title</remote-name>
@@ -724,7 +710,6 @@
               <approx-count>147</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Role</remote-name>
@@ -739,7 +724,6 @@
               <approx-count>376</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Job Portal</remote-name>
@@ -754,7 +738,6 @@
               <approx-count>16</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Job Description</remote-name>
@@ -769,7 +752,6 @@
               <approx-count>376</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Benefits</remote-name>
@@ -784,7 +766,6 @@
               <approx-count>11</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>skills</remote-name>
@@ -799,7 +780,6 @@
               <approx-count>376</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Responsibilities</remote-name>
@@ -814,7 +794,6 @@
               <approx-count>375</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Company</remote-name>
@@ -829,7 +808,6 @@
               <approx-count>926</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Company Profile</remote-name>
@@ -844,7 +822,6 @@
               <approx-count>923</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RGB' />
-              <object-id>[job_descriptions.csv_43B71084FB0349BBAE8E6907907F3613]</object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -1309,7 +1286,7 @@
         <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
       </semantic-values>
       <datasource-dependencies datasource='Parameters'>
-        <column caption='Current_Hour' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
+        <column caption='Simulated IST Time (3 PM – 5 PM)' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
           <calculation class='tableau' formula='15' />
         </column>
       </datasource-dependencies>
@@ -1748,7 +1725,7 @@
             <datasource name='Parameters' />
           </datasources>
           <datasource-dependencies datasource='Parameters'>
-            <column caption='Current_Hour' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
+            <column caption='Simulated IST Time (3 PM – 5 PM)' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
               <calculation class='tableau' formula='15' />
             </column>
           </datasource-dependencies>
@@ -1878,7 +1855,7 @@
             <datasource name='Parameters' />
           </datasources>
           <datasource-dependencies datasource='Parameters'>
-            <column caption='Current_Hour' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
+            <column caption='Simulated IST Time (3 PM – 5 PM)' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
               <calculation class='tableau' formula='15' />
             </column>
           </datasource-dependencies>
@@ -2002,7 +1979,7 @@
             <datasource name='Parameters' />
           </datasources>
           <datasource-dependencies datasource='Parameters'>
-            <column caption='Current_Hour' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
+            <column caption='Simulated IST Time (3 PM – 5 PM)' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
               <calculation class='tableau' formula='15' />
             </column>
           </datasource-dependencies>
@@ -2154,7 +2131,7 @@
             <mapsource name='Tableau' />
           </mapsources>
           <datasource-dependencies datasource='Parameters'>
-            <column caption='Current_Hour' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
+            <column caption='Simulated IST Time (3 PM – 5 PM)' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
               <calculation class='tableau' formula='15' />
             </column>
           </datasource-dependencies>
@@ -2169,7 +2146,7 @@
               <calculation class='tableau' formula='IF [Calculation_1446719712043009] &gt; 20 THEN &quot;YES&quot; ELSE &quot;NO&quot; END' />
             </column>
             <column caption='Show_3to6PM' datatype='boolean' name='[Calculation_1446719734616070]' role='dimension' type='nominal'>
-              <calculation class='tableau' formula='[Parameters].[Parameter 1] &gt;= 15 AND [Parameters].[Parameter 1] &lt; 18' />
+              <calculation class='tableau' formula='[Parameters].[Parameter 1] &gt;= 15 AND [Parameters].[Parameter 1] &lt; 17' />
             </column>
             <column datatype='integer' name='[Company Size]' role='measure' type='quantitative' />
             <column datatype='string' name='[Contact Person]' role='dimension' type='nominal' />
@@ -2292,7 +2269,7 @@
             <mapsource name='Tableau' />
           </mapsources>
           <datasource-dependencies datasource='Parameters'>
-            <column caption='Current_Hour' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
+            <column caption='Simulated IST Time (3 PM – 5 PM)' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
               <calculation class='tableau' formula='15' />
             </column>
           </datasource-dependencies>
@@ -2307,7 +2284,7 @@
               <calculation class='tableau' formula='IF [Calculation_1446719712043009] &gt; 20 THEN &quot;YES&quot; ELSE &quot;NO&quot; END' />
             </column>
             <column caption='Show_3to6PM' datatype='boolean' name='[Calculation_1446719734616070]' role='dimension' type='nominal'>
-              <calculation class='tableau' formula='[Parameters].[Parameter 1] &gt;= 15 AND [Parameters].[Parameter 1] &lt; 18' />
+              <calculation class='tableau' formula='[Parameters].[Parameter 1] &gt;= 15 AND [Parameters].[Parameter 1] &lt; 17' />
             </column>
             <column datatype='integer' name='[Company Size]' role='measure' type='quantitative' />
             <column datatype='string' name='[Contact Person]' role='dimension' type='nominal' />
@@ -2427,7 +2404,7 @@
             <datasource name='Parameters' />
           </datasources>
           <datasource-dependencies datasource='Parameters'>
-            <column caption='Current_Hour' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
+            <column caption='Simulated IST Time (3 PM – 5 PM)' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
               <calculation class='tableau' formula='15' />
             </column>
           </datasource-dependencies>
@@ -2566,7 +2543,7 @@
             <datasource name='Parameters' />
           </datasources>
           <datasource-dependencies datasource='Parameters'>
-            <column caption='Current_Hour' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
+            <column caption='Simulated IST Time (3 PM – 5 PM)' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='15'>
               <calculation class='tableau' formula='15' />
             </column>
           </datasource-dependencies>
@@ -2909,8 +2886,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='2000' minheight='2000' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='107' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98002' id='106' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+            <zone h='100000' id='119' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='118' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
                 <zone h='13983' id='16' mode='checkdropdown' name='Company' param='[federated.18l6cju1szvabd12b7oxa15df5ha].[none:Job Title:nk]' type-v2='filter' values='database' w='9656' x='89861' y='15106'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3062,22 +3039,24 @@
     <dashboard enable-sort-zone-taborder='true' name='Job Analytics Dashboard'>
       <style />
       <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='job_descriptions' name='federated.18l6cju1szvabd12b7oxa15df5ha' />
+      </datasources>
+      <datasource-dependencies datasource='federated.18l6cju1szvabd12b7oxa15df5ha'>
+        <column caption='Show_3to5PM' datatype='boolean' name='[Calculation_1446719733866501]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='[Parameters].[Parameter 1] &gt;= 15 AND [Parameters].[Parameter 1] &lt; 17' />
+        </column>
+        <column caption='Show_3to6PM' datatype='boolean' name='[Calculation_1446719734616070]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='[Parameters].[Parameter 1] &gt;= 15 AND [Parameters].[Parameter 1] &lt; 17' />
+        </column>
+        <column-instance column='[Calculation_1446719733866501]' derivation='None' name='[none:Calculation_1446719733866501:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_1446719734616070]' derivation='None' name='[none:Calculation_1446719734616070:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='98002' id='57' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
-            <zone h='6242' id='58' type-v2='title' w='99034' x='483' y='999'>
-              <zone-style>
-                <format attr='border-color' value='#000000' />
-                <format attr='border-style' value='none' />
-                <format attr='border-width' value='0' />
-                <format attr='margin' value='4' />
-              </zone-style>
-            </zone>
-            <zone h='91760' id='39' param='vert' type-v2='layout-flow' w='99034' x='483' y='7241'>
-              <zone forceUpdate='true' h='3371' id='52' type-v2='text' w='99034' x='483' y='7241'>
-                <formatted-text>
-                  <run fontcolor='#000000' fontname='Benton Sans Book'>All tasks are implemented. Some visualizations like Task 3 and Task 4 may not display data due to strict filtering conditions.</run>
-                </formatted-text>
+          <zone h='98002' id='107' param='horz' type-v2='layout-flow' w='99034' x='483' y='999'>
+            <zone h='98002' id='57' param='vert' type-v2='layout-flow' w='89378' x='483' y='999'>
+              <zone h='6242' id='58' type-v2='title' w='89378' x='483' y='999'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -3085,67 +3064,111 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='88389' id='27' param='horz' type-v2='layout-flow' w='99034' x='483' y='10612'>
-                <zone h='88389' id='18' param='vert' type-v2='layout-flow' w='99034' x='483' y='10612'>
-                  <zone h='88389' id='16' type-v2='layout-basic' w='99034' x='483' y='10612'>
-                    <zone h='88389' id='3' name='Task1' w='15110' x='483' y='10612'>
-                      <zone-style>
-                        <format attr='border-color' value='#000000' />
-                        <format attr='border-style' value='none' />
-                        <format attr='border-width' value='0' />
-                        <format attr='margin' value='4' />
-                      </zone-style>
-                    </zone>
-                    <zone h='44191' id='21' name='Task2' w='49520' x='49997' y='10612'>
-                      <zone-style>
-                        <format attr='border-color' value='#000000' />
-                        <format attr='border-style' value='none' />
-                        <format attr='border-width' value='0' />
-                        <format attr='margin' value='4' />
-                      </zone-style>
-                    </zone>
-                    <zone h='88389' id='43' name='Task6' w='18555' x='31442' y='10612'>
-                      <zone-style>
-                        <format attr='border-color' value='#000000' />
-                        <format attr='border-style' value='none' />
-                        <format attr='border-width' value='0' />
-                        <format attr='margin' value='4' />
-                      </zone-style>
-                    </zone>
-                    <zone h='88389' id='44' name='Task5' w='15849' x='15593' y='10612'>
-                      <zone-style>
-                        <format attr='border-color' value='#000000' />
-                        <format attr='border-style' value='none' />
-                        <format attr='border-width' value='0' />
-                        <format attr='margin' value='4' />
-                      </zone-style>
-                    </zone>
-                    <zone h='44198' id='45' name='Task3' w='24759' x='49997' y='54803'>
-                      <zone-style>
-                        <format attr='border-color' value='#000000' />
-                        <format attr='border-style' value='none' />
-                        <format attr='border-width' value='0' />
-                        <format attr='margin' value='4' />
-                      </zone-style>
-                    </zone>
-                    <zone h='22098' id='46' name='Task4_Main' w='24761' x='74756' y='54803'>
-                      <zone-style>
-                        <format attr='border-color' value='#000000' />
-                        <format attr='border-style' value='none' />
-                        <format attr='border-width' value='0' />
-                        <format attr='margin' value='4' />
-                      </zone-style>
-                    </zone>
-                    <zone h='22100' id='47' name='Task4_Drill' w='24761' x='74756' y='76901'>
-                      <zone-style>
-                        <format attr='border-color' value='#000000' />
-                        <format attr='border-style' value='none' />
-                        <format attr='border-width' value='0' />
-                        <format attr='margin' value='4' />
-                      </zone-style>
+              <zone h='91760' id='39' param='vert' type-v2='layout-flow' w='89378' x='483' y='7241'>
+                <zone forceUpdate='true' h='3621' id='52' type-v2='text' w='89378' x='483' y='7241'>
+                  <formatted-text>
+                    <run fontcolor='#000000'>All tasks are implemented. Some visualizations like Task 3 and Task 4 may not display data due to strict filtering conditions.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='31' forceUpdate='true' h='4869' id='103' is-fixed='true' type-v2='text' w='89378' x='483' y='10862'>
+                  <formatted-text>
+                    <run fontcolor='#000000'>This dashboard is designed to display data only between 3 PM – 5 PM IST.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000'>Due to Tableau Public timezone limitations, the time condition is implemented using a parameter-based simulation.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='83270' id='27' param='horz' type-v2='layout-flow' w='89378' x='483' y='15731'>
+                  <zone h='83270' id='18' param='vert' type-v2='layout-flow' w='89378' x='483' y='15731'>
+                    <zone h='83270' id='16' type-v2='layout-basic' w='89378' x='483' y='15731'>
+                      <zone h='83270' id='3' name='Task1' w='13635' x='483' y='15731'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='41629' id='21' name='Task2' w='44693' x='45168' y='15731'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='83270' id='43' name='Task6' w='16745' x='28423' y='15731'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='83270' id='44' name='Task5' w='14305' x='14118' y='15731'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='41641' id='45' name='Task3' w='22345' x='45168' y='57360'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='20816' id='46' name='Task4_Main' w='22348' x='67513' y='57360'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='20825' id='47' name='Task4_Drill' w='22348' x='67513' y='78176'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
                     </zone>
                   </zone>
                 </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98002' id='106' is-fixed='true' param='vert' type-v2='layout-flow' w='9656' x='89861' y='999'>
+              <zone h='10237' id='108' name='Task1' param='[federated.18l6cju1szvabd12b7oxa15df5ha].[none:Calculation_1446719733866501:nk]' type-v2='filter' values='database' w='9656' x='89861' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10237' id='109' name='Task4_Main' param='[federated.18l6cju1szvabd12b7oxa15df5ha].[none:Calculation_1446719734616070:nk]' type-v2='filter' values='database' w='9656' x='89861' y='11236'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
               </zone>
             </zone>
           </zone>
@@ -3159,10 +3182,10 @@
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
-          <size maxheight='1950' minheight='1950' sizing-mode='vscroll' />
+          <size maxheight='2000' minheight='2000' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='92' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98002' id='91' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+            <zone h='100000' id='105' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='104' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
                 <zone h='6242' id='58' type-v2='title' w='99034' x='483' y='999'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3172,9 +3195,9 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone forceUpdate='true' h='3371' id='52' type-v2='text' w='99034' x='483' y='7241'>
+                <zone forceUpdate='true' h='3621' id='52' type-v2='text' w='99034' x='483' y='7241'>
                   <formatted-text>
-                    <run fontcolor='#000000' fontname='Benton Sans Book'>All tasks are implemented. Some visualizations like Task 3 and Task 4 may not display data due to strict filtering conditions.</run>
+                    <run fontcolor='#000000'>All tasks are implemented. Some visualizations like Task 3 and Task 4 may not display data due to strict filtering conditions.</run>
                   </formatted-text>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3184,7 +3207,12 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='88389' id='3' is-fixed='true' name='Task1' w='15110' x='483' y='10612'>
+                <zone forceUpdate='true' h='6242' id='103' type-v2='text' w='99034' x='483' y='10862'>
+                  <formatted-text>
+                    <run fontcolor='#000000'>This dashboard is designed to display data only between 3 PM – 5 PM IST.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000'>Due to Tableau Public timezone limitations, the time condition is implemented using a parameter-based simulation.</run>
+                  </formatted-text>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3193,7 +3221,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='88389' id='44' is-fixed='true' name='Task5' w='15849' x='15593' y='10612'>
+                <zone fixed-size='280' h='81897' id='3' is-fixed='true' name='Task1' w='15109' x='483' y='17104'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3202,7 +3230,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='88389' id='43' is-fixed='true' name='Task6' w='18555' x='31442' y='10612'>
+                <zone fixed-size='280' h='81897' id='44' is-fixed='true' name='Task5' w='15849' x='15592' y='17104'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3211,7 +3239,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='44191' id='21' is-fixed='true' name='Task2' w='49520' x='49997' y='10612'>
+                <zone fixed-size='280' h='81897' id='43' is-fixed='true' name='Task6' w='18555' x='31441' y='17104'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3220,7 +3248,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='44198' id='45' is-fixed='true' name='Task3' w='24759' x='49997' y='54803'>
+                <zone fixed-size='280' h='40943' id='21' is-fixed='true' name='Task2' w='49521' x='49996' y='17104'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3229,7 +3257,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='169' h='22098' id='46' is-fixed='true' name='Task4_Main' w='24761' x='74756' y='54803'>
+                <zone fixed-size='280' h='40954' id='45' is-fixed='true' name='Task3' w='24759' x='49996' y='58047'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3238,7 +3266,16 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='169' h='22100' id='47' is-fixed='true' name='Task4_Drill' w='24761' x='74756' y='76901'>
+                <zone fixed-size='156' h='20474' id='46' is-fixed='true' name='Task4_Main' w='24762' x='74755' y='58047'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='156' h='20480' id='47' is-fixed='true' name='Task4_Drill' w='24762' x='74755' y='78521'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3307,8 +3344,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='81' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98002' id='80' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+            <zone h='100000' id='93' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='92' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
                 <zone h='6242' id='47' type-v2='title' w='99034' x='483' y='999'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3350,7 +3387,7 @@
       <simple-id uuid='{5415BCF2-1D76-4BC7-B33B-E4A24C37CD6C}' />
     </dashboard>
   </dashboards>
-  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+  <windows source-height='37'>
     <window class='worksheet' name='Company'>
       <cards>
         <edge name='left'>
@@ -3697,7 +3734,7 @@
       </cards>
       <simple-id uuid='{7A3221F6-0FC4-4E89-B615-E3CF5636874D}' />
     </window>
-    <window class='worksheet' maximized='true' name='Task6'>
+    <window class='worksheet' name='Task6'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -3732,7 +3769,7 @@
       <active id='3' />
       <simple-id uuid='{019C0168-3E2E-4B60-93D7-F94FD798F560}' />
     </window>
-    <window class='dashboard' name='Job Analytics Dashboard'>
+    <window class='dashboard' maximized='true' name='Job Analytics Dashboard'>
       <viewpoints>
         <viewpoint name='Task1'>
           <zoom type='entire-view' />
@@ -3752,7 +3789,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='3' />
+      <active id='-1' />
       <simple-id uuid='{A91F0758-7676-49B6-BA2E-841303F5AB0C}' />
     </window>
   </windows>

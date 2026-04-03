@@ -32,20 +32,19 @@ Due to large file size, the dataset is not included in this repository.
 
 ## Hosted Links
 
-### Tableau Public Dashboard  
-https://public.tableau.com/app/profile/jhahnavi.k.p/viz/ElevanceSkills_Internship_Tasks_JhahnaviKP/JobAnalyticsDashboard  
+### Tableau Public Dashboard
+https://public.tableau.com/app/profile/jhahnavi.k.p/viz/ElevanceSkills_Internship_Tasks_JhahnaviKP/JobAnalyticsDashboard?publish=yes
 
 ### Live Dashboard (Netlify)  
 https://jobbbanalyticsssportalll.netlify.app/  
 
 ### Report 
-https://drive.google.com/file/d/1XJ1asM8-O0lLkFFCM7_QuDs2m8a-q8cG/view?usp=drive_link  
+https://drive.google.com/file/d/1ft0t_Y00hDAkm0rH3ar6-jlBr88zqIdB/view?usp=drive_link 
 
 ---
 
 ## Files Included
 
-- job_descriptions.csv (Dataset)  
 - ElevanceSkills_Internship_Tasks_JhahnaviKP.twbx (Tableau Workbook)  
 - index.html (Embedded Dashboard)  
 - ElevanceSKILLS INTERNSHIP PROJECT REPORT.pdf (Project Report)  
