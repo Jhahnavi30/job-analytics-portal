@@ -64,6 +64,9 @@ https://drive.google.com/file/d/1XJ1asM8-O0lLkFFCM7_QuDs2m8a-q8cG/view?usp=drive
 ## Note
 
 Some visualizations (Task 3 and Task 4) may not display data due to strict filtering conditions applied as per task requirements. This confirms correct implementation of all conditions.
+The Tableau workbook (.twbx) file is approximately 71MB,
+which is slightly above GitHub’s recommended size limit (50MB),
+but within the allowed limit (100MB).
 
 ---
 
